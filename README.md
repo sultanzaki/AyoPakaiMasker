@@ -1,7 +1,5 @@
 # AyoPakaiMasker
-AyoPakaiMasker is mask detection using Python and OpenCV, it is using the algorithm of Haarcascade to detect nose and mouth.
-it use mechanism that if openCV detect nose AND mouth it will return True, then openCV will write text "Kamu pakai masker" and change the rectangle of face to green, if openCV
-only detect nose OR mouth it will write text "Pakai Masker Yang Benar Dong" and change the rectangle of face to yellow, if openCV does not detect both, nose and mouth. It will return False. it will write text "Kamu tidak pakai masker" and and change the rectangle of face to red.
+AyoPakaiMasker is mask detection using Python and OpenCV, and it is using the algorithm of Haarcascade to detect nose and mouth. It uses a mechanism that if OpenCV detects nose and mouth, it will return True. Opencv will write the text "Kamu pakai masker" and change the rectangle of the face to green. If OpenCV only detects nose OR mouth, it will write text "Pakai Masker Yang Benar Dong" and shift the rectangle of face to yellow if openCV does not see both nose and mouth. It will return False. It will write the text "Kamu tidak pakai masker" and change the face's rectangle to red.
 # WARNING
 1. It has very low accuracy in low light.
 2. It only detect single face in one time.
